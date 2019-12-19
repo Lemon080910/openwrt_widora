@@ -1033,6 +1033,8 @@ Image/Build/Profile/WIDORA1664=$(call BuildFirmware/Default16M/$(1),$(1),WIDORA1
 Image/Build/Profile/WIDORA864=$(call BuildFirmware/Default8M/$(1),$(1),WIDORA864,WIDORA864)
 Image/Build/Profile/WIDORA3264=$(call BuildFirmware/Default32M/$(1),$(1),WIDORA3264,WIDORA3264)
 
+Image/Build/Profile/xiezhu=$(call BuildFirmware/Default32M/$(1),$(1),xiezhu,xiezhu)
+
 ifeq ($(SUBTARGET),mt7628)
 define Image/Build/Profile/Default
 	$(call Image/Build/Profile/MT7688,$(1))
@@ -1042,6 +1044,8 @@ define Image/Build/Profile/Default
 	$(call Image/Build/Profile/WIDORA1664,$(1))
 	$(call Image/Build/Profile/WIDORA864,$(1))
 	$(call Image/Build/Profile/WIDORA3264,$(1))
+	$(call Image/Build/Profile/xiezhu,$(1))
+
 endef
 endif
 

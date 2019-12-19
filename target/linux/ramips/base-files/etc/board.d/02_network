@@ -186,7 +186,8 @@ ramips_setup_interfaces()
 		;;
 
 	widora-neo | \
-	widora-bit5)
+	widora-bit5 | \
+	xiezhu)
 		ucidef_set_interfaces_lan_wan "eth0.1" "eth0.2"
 		ucidef_add_switch "switch0" "1" "1"
 		ucidef_add_switch_vlan "switch0" "1" "1 2 3 4 6t"
@@ -395,7 +396,8 @@ ramips_setup_macs()
 		lan_mac=$(mtd_get_mac_binary factory 46)
 		;;
 	widora-neo | \
-	widora-bit5)
+	widora-bit5 | \
+	xiezhu)
 		wan_mac=$(mtd_get_mac_binary factory 4)
 		lan_mac=$(mtd_get_mac_binary factory 46)
 		;;

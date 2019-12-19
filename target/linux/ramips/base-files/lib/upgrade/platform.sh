@@ -65,6 +65,7 @@ platform_check_image() {
 	linkits7688d | \
 	widora-neo | \
 	widora-bit5 | \
+	xiezhu | \
 	m2m | \
 	m3 | \
 	m4 | \
